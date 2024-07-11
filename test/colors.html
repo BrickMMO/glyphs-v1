@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color del Icono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .box-red { background-color: red; }
+        .box-green { background-color: green; }
+        .box-blue { background-color: blue; }
+        .box-yellow { background-color: yellow; }
+        .custom-color { margin: 10px; }
+        .reset-box {
+            background-color: lightgray;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-house" id="icon" style="color: #FFD43B; font-size: 50px;"></i>
+    <div class="color-box box-red" data-color="red"></div>
+    <div class="color-box box-green" data-color="green"></div>
+    <div class="color-box box-blue" data-color="blue"></div>
+    <div class="color-box box-yellow" data-color="yellow"></div>
+    <input type="color" id="colorPicker" class="custom-color" value="#FFD43B">
+    <div class="color-box reset-box" id="resetBox">Reset</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

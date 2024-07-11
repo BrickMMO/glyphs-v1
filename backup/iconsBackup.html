@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Icons BrickMMO</title>
+    <!--CDN link for using Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+        /* body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 10px 20px;
+                text-align: center;
+            } */
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .preview .inner i {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            background: #ddd;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(24, 49, 83, 0.5);
+        }
+
+        .popup-content {
+            background-color: #fefefe;
+            margin: 10vh auto;
+            padding: 28px 32px;
+            border: 1px solid #888;
+            width: 80vw;
+            height: fit-content;
+            /* max-width: 1200px; */
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <i class="bm-events bm-rotate-90"></i>
+    <div class="bm-rotate-90" style="width: 20px; height: 20px; background-color: red;">aaa</div>
+    <!-- TOP NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn.brickmmo.com/images@1.0.0/brickmmo-logo-coloured-horizontal.png"
+                    alt="Brickmmo Logo" style="height: 35px" />
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <a class="mr-1 text-secondary link-underline link-underline-opacity-0" href="docs.html">Docs</a>
+                <a class="ml-1 text-secondary link-underline link-underline-opacity-0" href="icons.html">Icons</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="mt-3">
+        <div style="margin: 0 1rem;">
+            <div class="row bg-secondary text-white rounded-4 align-items-center" style="min-height: 100px; max-width: 1100px; margin: 0 auto;">
+                <div class="col-lg-9 d-flex align-items-center">
+                    <img src="https://branding.brickmmo.com/png/BrickMMO_Logo_Coloured.png" alt="Brickmmo Icon"
+                        class="me-3" style="height: 40px; width: auto;" />
+                    <p class="mb-0">
+                        <strong>Say hello to Brickmmo Icons!</strong>, the Brickmmo library for Brickmmo folks!
+                    </p>
+                </div>
+                <div class="col-lg-3 text-center text-lg-right">
+                    <a href="docs.html"
+                        class="btn btn-light rounded-3 border border-black border-start-0 border-top-0 border-end-0 border-5">
+                        <i class="fa-solid fa-clock text-dark"></i> START NOW!
+                    </a>
+                </div>
+            </div>
+
+            <div class="mx-auto my-4 p-1 border border-black border-2 rounded-4 d-flex align-items-center gap-2"
+                style="width: 100%; max-width: 700px">
+                <i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-0" placeholder="Search 23 icons..."
+                    oninput="filterIcons(this.value)">
+            </div>
+
+            <div class="row" style="max-width: 1100px; margin: 0 auto;">
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="BrickOverflow">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-brick-overflow"></i>
+                        </span>
+                        <br>
+                        <span class='label'>BrickOverflow</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Bricksum">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-bricksum"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Bricksum</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Brix">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-brix"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Brix</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Colours">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-colours"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Colours</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Control Panel">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-control-panel"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Control panel</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Conversions">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-control-panel"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Conversions</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Crypto">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-control-panel"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Crypto</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Events">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-events"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Events</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Flow">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-flow"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Flow</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="GPS">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-navigation"></i>
+                        </span>
+                        <br>
+                        <span class='label'>GPS</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Navigation">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-navigation"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Navigation</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Parts">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-parts"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Parts</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Pick a Brick">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-pick-a-brick"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Pick a brick</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Pixelate">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-placekit"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Pixelate</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="PlaceKit">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-placekit"></i>
+                        </span>
+                        <br>
+                        <span class='label'>PlaceKit</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Power Grid">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-power-grid"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Power Grid</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="QR Codes">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-qr"></i>
+                        </span>
+                        <br>
+                        <span class='label'>QR Codes</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Radio Station">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-radio-station"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Radio Station</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Roadview">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-roadview"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Roadview</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Stores">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-stores"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Stores</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Timeline">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-timeline"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Timeline</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Timesheets">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-timesheets"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Timesheets</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Tracks">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-tracks"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Tracks</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="Train">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-train"></i>
+                        </span>
+                        <br>
+                        <span class='label'>Train</span>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center" data-icon="VideoKit">
+                    <div class="preview">
+                        <span class="inner">
+                            <i class="bm-videokit"></i>
+                        </span>
+                        <br>
+                        <span class='label'>VideoKit</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 1rem;">
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-danger text-start flex-fill border border-3 border-danger">
+                        <p class="text-black fw-bold" style="margin: 0.5rem;">Need Help with or assistance to start
+                            using BrickMMO Icons</p>
+                        <p class="text-black" style="margin: 0.5rem;">Head over the <span
+                                class="text-decoration-underline">Version 1 Docs</span></p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="customPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="document.getElementById('customPopup').style.display='none'">&times;</span>
+                    <!-- TITLE AND DOWNLOAD BUTTON -->
+                    <div class="d-flex align-items-center gap-5 mb-4">
+                        <h2 id="iconTitle" class="text-start fw-bold">Title</h2>
+                        <i class="btn fa-solid fa-arrow-down text-decoration-underline btn-outline-primary border-0" style="font-size: 1.5rem;"></i>
+                    </div>
+
+                    <!-- ICON AND CLIPBOARD -->
+                    <div class="d-flex align-items-center justify-content-center flex-wrap gap-4">
+                        <!-- ICON -->
+                        <div id="backgroundIcon" class="border border-secondary border-2 rounded-3 d-flex flex-column align-items-center" style="flex-basis: calc(50% - 16px); min-width: 410px;">
+                            <i id="icon-popup" style="font-size: 120px;"></i>
+                            <div class="d-flex justify-content-between px-4 pb-4 text-primary" style="width: 100%;">
+                                <i class="settings-icon fa-solid fa-palette btn btn-outline-primary border-0 me-auto" style="font-size: 1.5rem" onclick="settings()"></i>
+                                <i id="nox-lumos" class="settings-icon fa-solid fa-moon btn btn-outline-primary border-0" style="font-size: 1.5rem; cursor: pointer;" onclick="backgroundMode()"></i>
+                            </div>
+                        </div>
+                        <!-- CLIPBOARD -->
+                        <div class="text-star" style="flex-basis: calc(50% - 16px); min-width: 410px;">
+                            <div class="d-flex flex-column rounded-3 mb-2 p-2" style="background-color: #183153; cursor: pointer;" onclick="copyIcon()">
+                                <button onclick="copyIcon()" class="align-self-end btn btn-primary"><i class="fa-solid fa-copy"></i></button>
+                                <code class="text-white" style="font-size: 1rem;">
+                                    <span id="clipboard">&lt;i class="bm-brick-overflow"&gt;&lt;/i&gt;</span>
+                                </code>
+                            </div>
+                            <div class="text-center">
+                                <a href="docs.html" class="btn btn-warning rounded-3 border border-black border-start-0 border-top-0 border-end-0 border-5 btn-outline-secondary text-black">
+                                    <i class="fa-solid fa-rocket"></i> Start Using This Icon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SETTINGS -->
+                    <div class="setting-section align-items-center justify-content-center flex-wrap gap-4 mt-2" style="display: none;">
+                        <!-- COLOR -->
+                        <div class="flex-grow-1" style="flex-basis: calc(50% - 16px); min-width: 380px;"> 
+                            COLOR
+                            <div class="d-flex justify-content-around gap-2">
+                                <div class="color-box rounded-3 border border-2 d-flex justify-content-center align-items-center" id="resetColor" style="flex-basis: 50px; cursor: pointer; background-color: #F0F1F3;">
+                                    <i class="fa-solid fa-ban"></i>
+                                </div>
+                                <div class="color-box rounded-3 border border-2 flex-fill" style=" cursor: pointer;" data-color="#FFD43B">
+                                    <div class="rounded-3 m-1" style="background-color: #FFD43B; height: 36px;"></div>
+                                </div>
+                                <div class="color-box rounded-3 border border-2 flex-fill" style="cursor: pointer;" data-color="#63E6BE">
+                                    <div class="rounded-3 m-1" style="background-color: #63E6BE; height: 36px;"></div>
+                                </div>
+                                <div class="color-box rounded-3 border border-2 flex-fill" style="cursor: pointer;" data-color="#74C0FC">
+                                    <div class="rounded-3 m-1" style="background-color: #74C0FC; height: 36px;"></div>
+                                </div>
+                                <div class="color-box rounded-3 border border-2 flex-fill" style="cursor: pointer;" data-color="#B197FC">
+                                    <div class="rounded-3 m-1" style="background-color: #B197FC; height: 36px;"></div>
+                                </div>
+                                <div class="rounded-3 border border-2 flex-fill" style="cursor: pointer; padding: 4px;">
+                                    <input type="color" id="colorPicker" class="rounded-3 border-0" style="height: 100%; width: 100%; cursor: pointer;" value="#000000">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SIZE -->
+                        <div class="flex-grow-1" style="flex-basis: calc(50% - 16px); min-width: 380px;">
+                            SIZE
+                            <div class="d-flex justify-content-around gap-2">
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-2xs">
+                                    2xs
+                                </div>                                
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-xs">
+                                    xs
+                                </div>  
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-sm">
+                                    sm
+                                </div>  
+                                <div class="size-box rounded-3 border border-2 d-flex justify-content-center align-items-center" id="resetSize" style="flex-basis: 50px; height: 47px; cursor: pointer; background-color: #F0F1F3;">
+                                    <i class="fa-solid fa-ban"></i>
+                                </div>
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-lg">
+                                    lg
+                                </div>  
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-xl">
+                                    xl
+                                </div>  
+                                <div class="size-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-size="bm-2xl">
+                                    2xl
+                                </div>  
+                            </div>  
+                        </div>
+                        <!-- ROTATE -->
+                        <div class="flex-grow-1" style="flex-basis: calc(50% - 16px); min-width: 380px;"> 
+                            ROTATE
+                            <div class="d-flex justify-content-around gap-2">
+                                <div class="rotate-box rounded-3 border border-2 d-flex justify-content-center align-items-center" id="resetRotate" style="flex-basis: 50px; height: 47px; cursor: pointer; background-color: #F0F1F3;">
+                                    <i class="fa-solid fa-ban"></i>
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-90">
+                                    90°
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-180">
+                                    180°
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-270">
+                                    270°
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FLIP -->
+                        <div class="flex-grow-1" style="flex-basis: calc(50% - 16px); min-width: 380px;"> 
+                            FLIP
+                            <div class="d-flex justify-content-around gap-2">
+                                <div class="rotate-box rounded-3 border border-2 d-flex justify-content-center align-items-center" id="resetRotate" style="flex-basis: 50px; height: 47px; cursor: pointer; background-color: #F0F1F3;">
+                                    <i class="fa-solid fa-ban"></i>
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-90">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="reflect-horizontal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-reflect-horizontal fa-fw fa-lg"><path fill="currentColor" d="M256 0c-13.3 0-24 10.7-24 24l0 464c0 13.3 10.7 24 24 24s24-10.7 24-24l0-464c0-13.3-10.7-24-24-24zM492.2 98.4c-12-5-25.7-2.2-34.9 6.9l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-256c0-12.9-7.8-24.6-19.8-29.6zm-472.5 0C7.8 103.4 0 115.1 0 128L0 384c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9z" class=""></path></svg>
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-180">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="reflect-vertical" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-reflect-vertical fa-fw fa-lg"><path fill="currentColor" d="M0 256c0-13.3 10.7-24 24-24l464 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 280c-13.3 0-24-10.7-24-24zM98.4 19.8C103.4 7.8 115.1 0 128 0L384 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9zm0 472.5c-5-12-2.2-25.7 6.9-34.9l128-128c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8l-256 0c-12.9 0-24.6-7.8-29.6-19.8z" class=""></path></svg>
+                                </div>
+                                <div class="rotate-box d-flex justify-content-center align-items-center rounded-3 border border-2 flex-fill" style="height: 47px; cursor: pointer;" data-rotate="bm-rotate-270">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fac" data-icon="reflect-both" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-reflect-both fa-fw fa-lg"><path fill="currentColor" d="M413.564 19.7541C408.611 7.79657 396.943 1.11901e-05 384 1.11901e-05L128 0C115.057 -5.65747e-07 103.389 7.79655 98.4359 19.7541C93.4829 31.7117 96.2206 45.4755 105.373 54.6274L233.373 182.627C245.869 195.124 266.131 195.124 278.627 182.627L406.627 54.6274C415.779 45.4755 418.517 31.7117 413.564 19.7541ZM19.7541 98.4359C7.79655 103.389 0 115.057 0 128V384C0 396.943 7.79655 408.611 19.7541 413.564C31.7117 418.517 45.4755 415.779 54.6274 406.627L182.627 278.627C195.124 266.131 195.124 245.869 182.627 233.373L54.6274 105.373C45.4755 96.2207 31.7117 93.4829 19.7541 98.4359ZM512 128C512 115.057 504.203 103.389 492.246 98.4359C480.288 93.4829 466.525 96.2207 457.373 105.373L329.373 233.373C316.876 245.869 316.876 266.131 329.373 278.627L457.373 406.627C466.525 415.779 480.288 418.517 492.246 413.564C504.203 408.611 512 396.943 512 384V128ZM413.564 492.246C408.611 504.203 396.943 512 384 512H128C115.057 512 103.389 504.203 98.4358 492.246C93.4828 480.288 96.2206 466.525 105.373 457.373L233.373 329.373C245.869 316.876 266.131 316.876 278.627 329.373L406.627 457.373C415.779 466.525 418.517 480.288 413.564 492.246Z" class=""></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let iconsDiv = document.querySelectorAll('.col-6.col-sm-4.col-md-2.text-center');
+        let popup = document.getElementById('customPopup');
+        let iconTitle = document.getElementById('iconTitle');
+        let closeBtn = document.querySelector('.close');
+
+        let iconPopup = document.getElementById("icon-popup")
+        let clipboard = document.getElementById("clipboard")
+
+        let backgroundIcon = document.getElementById("backgroundIcon")
+        let settingsIcon = document.querySelectorAll(".settings-icon")
+        let noxLumos = document.getElementById("nox-lumos")
+        let backgroundModeFlag = true   
+        
+        /* settings flag */
+        let settingsSections = document.querySelectorAll(".setting-section")
+        let settingsFlag = true 
+
+        /* Color Picker */
+        const colorBoxes = document.querySelectorAll('.color-box');
+        const colorPicker = document.getElementById('colorPicker');
+        const resetColor = document.getElementById('resetColor');
+        const originalColor = '#000000';
+
+        /* Size Picker */
+        const sizeBoxes = document.querySelectorAll('.size-box');
+        const resetSize = document.getElementById('resetSize');
+        let iconSize = null  /* size class - check if icon has size */
+        
+        /* Rotate Picker */
+        const rotateBoxes = document.querySelectorAll('.rotate-box');
+        const resetRotate = document.getElementById('resetRotate');
+        let iconRotate = null
+
+        /* store the icon clicked */
+        let iconClicked
+
+        /* ----- Search Bar Keyword ----- */
+        function filterIcons(keyword) {
+            keyword = keyword.toLowerCase();
+            let icons = document.querySelectorAll('.col-6.col-sm-4.col-md-2.text-center');
+
+            icons.forEach(icon => {
+                let text = icon.getAttribute('data-icon').toLowerCase();
+                if (text.includes(keyword)) {
+                    icon.style.display = "inline-block";
+                } else {
+                    icon.style.display = "none";
+                }
+            });
+        }
+
+        /* ----- Show Popup Icon ----- */
+        iconsDiv.forEach(individualDiv => {
+            individualDiv.addEventListener('click', function () {
+                let dataIcon = individualDiv.getAttribute('data-icon');
+
+                let iconClass = individualDiv.children[0].children[0].children[0];
+
+                iconClicked = iconClass
+
+                /* clipboard.innerText = `<i class="${iconClass.className}"></i>` */
+                clipboard.innerText = iconClass.outerHTML
+
+                iconPopup.classList.add(`${iconClass.className}`)
+
+                iconTitle.innerHTML = dataIcon
+                popup.style.display = 'block';
+            });
+
+            individualDiv.addEventListener('mouseover', function () {
+                let innerElement = individualDiv.children[0].children[0];
+                innerElement.style.cursor = 'pointer';
+                innerElement.classList.add("bg-warning")
+            });
+
+            individualDiv.addEventListener('mouseleave', function () {
+                let innerElement = individualDiv.children[0].children[0];
+                innerElement.classList.remove("bg-warning")
+            });
+        });
+
+        /* ----- Close Popup ----- */
+        closeBtn.addEventListener('click', function () {
+            closeIconPopUp()
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target === popup) {
+                closeIconPopUp()
+            }
+        });
+
+        /* ----- Clipboard Popup ----- */
+        function copyIcon() {
+            const copyContent = async () => {
+                try {
+                    await navigator.clipboard.writeText(clipboard.innerText);
+                    console.log('Content copied to clipboard: ', clipboard.innerText);
+                } catch (err) {
+                    console.error('Failed to copy: ', err);
+                }
+            }
+            copyContent();
+        }
+
+        function backgroundMode(){          
+            backgroundModeFlag ? (backgroundIcon.style.backgroundColor = "#183153", iconPopup.style.color = "white", noxLumos.classList.remove("fa-moon"), noxLumos.classList.add("fa-sun")) 
+                               : (backgroundIcon.style.backgroundColor = "white", iconPopup.style.color = "#183153", noxLumos.classList.add("fa-moon"), noxLumos.classList.remove("fa-sun"))
+
+            settingsIcon.forEach(setting => {
+                backgroundModeFlag ? (setting.classList.remove("btn-outline-primary"), setting.classList.add("btn-outline-warning")) : (setting.classList.add("btn-outline-primary"), setting.classList.remove("btn-outline-warning"))
+                
+            })
+            backgroundModeFlag = !backgroundModeFlag
+        }
+
+        /* ----- Show settings ----- */
+
+        function settings(){
+            settingsSections.forEach(setting => {
+                settingsFlag ? setting.style.display = "flex" : setting.style.display = "none"
+            })
+            settingsFlag = !settingsFlag
+        } 
+
+        /* ----- Color Picker ----- */
+
+        colorBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const newColor = box.getAttribute('data-color');
+                iconPopup.style.color = newColor;
+                colorPicker.value = newColor;
+                /* clipboard.innerText = `<i class="${iconClicked.className}" style="color: ${newColor}"></i>` */
+
+                iconClicked.style.color = newColor
+                clipboard.innerText = iconClicked.outerHTML
+
+                borderBoxColor()
+                box.classList.add("border-dark")
+            });
+        });
+
+        colorPicker.addEventListener('input', () => {
+            const newColor = colorPicker.value;
+            iconPopup.style.color = newColor;
+            /* clipboard.innerText = `<i class="${iconClicked.className}" style="color: ${newColor}"></i>` */
+
+            iconClicked.style.color = newColor
+            clipboard.innerText = iconClicked.outerHTML
+
+            borderBoxColor()
+            colorPicker.parentElement.classList.add("border-dark")
+        });
+
+        resetColor.addEventListener('click', () => {
+            iconPopup.style.color = originalColor;
+            colorPicker.value = originalColor;
+            /* clipboard.innerText = `<i class="${iconClicked.className}"></i>` */
+
+            iconClicked.removeAttribute('style');
+            clipboard.innerText = iconClicked.outerHTML
+
+            borderBoxColor()
+            resetColor.classList.add("border-dark")
+        });
+
+        /* ----- Size Picker ----- */
+
+        sizeBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const size = box.getAttribute('data-size');
+                if(iconSize != null){
+                    iconClicked.classList.remove(iconSize)
+                }
+
+                iconClicked.classList.add(size)
+                clipboard.innerText = iconClicked.outerHTML
+
+                iconSize = size
+
+                borderBoxSize()
+                box.classList.add("border-dark")
+            });
+        });
+
+        resetSize.addEventListener('click', () => {
+            iconClicked.classList.remove(iconSize)
+            clipboard.innerText = iconClicked.outerHTML
+
+            borderBoxSize()
+            resetSize.classList.add("border-dark")
+        });
+        
+        /* ----- Rotate Picker ----- */
+
+        rotateBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const rotate = box.getAttribute('data-rotate');
+                if(iconRotate != null){
+                    iconClicked.classList.remove(iconRotate)
+                }
+
+                iconClicked.classList.add(rotate)
+                clipboard.innerText = iconClicked.outerHTML
+
+                iconRotate = rotate
+
+                borderBoxRotate()
+                box.classList.add("border-dark")
+            });
+        });
+
+        resetRotate.addEventListener('click', () => {
+            iconClicked.classList.remove(iconRotate)
+            clipboard.innerText = iconClicked.outerHTML
+
+            borderBoxRotate()
+            resetRotate.classList.add("border-dark")
+        });
+
+        /* ----- Functions ----- */
+
+        function closeIconPopUp(){
+            iconPopup.classList = []
+            popup.style.display = 'none';
+
+            iconPopup.style.color = "#000000";
+            colorPicker.value = "#000000";
+
+            iconClicked.style.cssText = ''
+
+            borderBoxColor()
+            borderBoxSize()
+            borderBoxRotate()
+        }
+
+        function borderBoxColor(){
+            colorPicker.parentElement.classList.remove("border-dark")
+            colorBoxes.forEach(borderBox => {
+                borderBox.classList.remove("border-dark")
+            })
+        }
+
+        function borderBoxSize(){
+            sizeBoxes.forEach(borderBox => {
+                borderBox.classList.remove("border-dark")
+            })
+        }
+
+        function borderBoxRotate(){
+            rotateBoxes.forEach(borderBox => {
+                borderBox.classList.remove("border-dark")
+            })
+        }
+
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+    <!-- fontawesone -->
+    <script src="https://kit.fontawesome.com/a74f41de6e.js" crossorigin="anonymous"></script>
+    <!-- Link for Bootstrap javascript functionalities -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

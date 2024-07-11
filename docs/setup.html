@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Icons BrickMMO</title>
+    <!--CDN link for using Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- TOP NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://cdn.brickmmo.com/images@1.0.0/brickmmo-logo-coloured-horizontal.png"
+                    alt="Brickmmo Logo" style="height: 35px" />
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <a class="mr-1 text-secondary link-underline link-underline-opacity-0" href="../docs.html">Docs</a>
+                <a class="ml-1 text-secondary link-underline link-underline-opacity-0" href="../icons.html">Icons</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CONTENT -->
+    <main class="mt-3 d-flex" style="background-color: #F1F2F4;">
+        <div class="p-3 border border-secondary" style="flex-basis: 300px;">
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  Get Started on the Web
+                </button>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#quick-start" class="link-dark rounded">Quick Start</a></li>
+                    <li><a href="#setup" class="link-dark rounded">Setup</a></li>
+                    <li><a href="#find-add" class="link-dark rounded">Find and Add</a></li>
+                    <li><a href="#customize" class="link-dark rounded">Customize</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Add Icons on the Web
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#how-add" class="link-dark rounded">How to Add Icons</a></li>
+                    <li><a href="#how-style" class="link-dark rounded">How To Style Icons</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Styling icons on the Web
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#styling-brickmmo" class="link-dark rounded">Styling with BrickMMO Icons</a></li>
+                    <li><a href="#styling-basics" class="link-dark rounded">Styling Basics</a></li>
+                    <li><a href="#styling-colours" class="link-dark rounded">Colours Icons</a></li>
+                    <li><a href="#styling-sizes" class="link-dark rounded">Sizing Icons</a></li>
+                    <li><a href="#" class="link-dark rounded">Fixed Width Icons</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </div> 
+        <div class="px-5 py-3 border border-secondary" style="flex-basis: calc(100% - 300px)">
+          <h1 class="fw-bold pb-3" id="quick-start">Quick Start</h1>
+          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">BrickMMO has its own unique set of icons! Come and explore how to use and integrate them into your different pages. <span class="fw-bold">Developed by the BrickMMO community</span>, these icons are completely <span class="fw-bold">free to use</span>. Enhance your project with our custom-made icons!</p>
+          <p>We'll cover the basics of setting up BrickMMO Icons and finding the perfect icon for your project. This video will walk you through the steps below:</p>
+
+          <div class="text-center my-3">
+            <iframe class="rounded-5" width="720" height="406" src="https://www.youtube.com/embed/Yy1v3pvo4uo" title="BrickMMO Icons | Create Your First BrickMMO Icon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <h2 class="fw-bold" id="setup">1. Setup BrickMMO Icons in Your Project</h2>
+          <p>BrickMMO Icon CDN is the easiest way to get BrickMMO icons into your projects. Just grab the code and add the CDN code to the head of each template or page of your project where you want to add icons.</p>
+
+          <!-- CDN -->
+          <div class="border border-secondary border-2 rounded-3 bg-dark mb-3">
+            <code>
+              <div class="px-5 py-3">
+                <span class="text-white">&lt;!</span><span class="text-primary">DOCTYPE <span class="text-info">html</span></span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white">&lt;</span><span class="text-primary">html</span> <span class="text-info">lang</span><span class="text-white">=</span><span class="text-orange">"en"</span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white">&lt;</span><span class="text-primary">head</span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white ps-4">&lt;</span><span class="text-primary">meta </span><span class="text-info">charset</span><span class="text-white">=</span><span class="text-orange">"UTF-8"</span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white ps-4">&lt;</span><span class="text-primary">meta </span><span class="text-info">name</span><span class="text-white">=</span><span class="text-orange">"viewport"</span> <span class="text-info">content</span><span class="text-white">=</span><span class="text-orange">"width=device-width, initial-scale=1.0"</span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white ps-4">&lt;</span><span class="text-primary">title</span><span class="text-white">&gt;</span><span class="text-white">Adding CDN | Icons BrickMMO</span><span class="text-white">&lt;/</span><span class="text-primary">title</span><span class="text-white">&gt;</span>
+                <br>
+                <br>
+                <span class="text-success ps-4">&lt;!-- Adding CDN to the head tag --&gt;</span>
+                <br>
+                <span class="text-white ps-4">&lt;</span><span class="text-primary">link </span><span class="text-info">rel</span><span class="text-white">=</span><span class="text-orange">"stylesheet"</span> <span class="text-info">href</span><span class="text-white">=</span><span class="text-orange">"https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css"</span><span class="text-white"> /&gt;</span>
+                <br>
+                <span class="text-white">&lt;/</span><span class="text-primary">head</span><span class="text-white">&gt;</span>
+                <br>
+
+                <span class="text-white">&lt;</span><span class="text-primary">body</span><span class="text-white">&gt;</span>
+                <br>
+                <br>
+                <span class="text-white">&lt;/</span><span class="text-primary">body</span><span class="text-white">&gt;</span>
+                <br>
+                <span class="text-white">&lt;/</span><span class="text-primary">html</span><span class="text-white">&gt;</span>
+                <br>
+              </div>
+            </code>
+          </div> 
+          
+          <h2 class="fw-bold" id="find-add">2. Find and Add Icons</h2>
+          <p>Browse the different icons in v1 to find some icons you like and then add the icon name and style as CSS classes to an HTML <code class="bg-white px-2">&lt;i&gt;</code> tag.</p>
+
+          <!-- Section Display Icons -->
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3 px-4 d-flex column-gap-4 flex-wrap justify-content-around" style="font-size: 65px;">
+            <i class="bm-brick-overflow"></i>
+            <i class="bm-bricksum"></i>
+            <i class="bm-colours"></i>
+            <i class="bm-events"></i>
+            <i class="bm-navigation"></i>
+            <i class="bm-parts"></i>
+            <i class="bm-qr"></i>
+            <i class="bm-radio-station"></i>
+            <i class="bm-train"></i>
+            <i class="bm-videokit"></i>
+          </div>
+          <!-- Section code Icons -->
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <code>
+              <div class="px-5 py-3">
+                <span class="text-secondary">&lt;</span><span class="text-success">body</span><span class="text-secondary">&gt;</span>
+                <div class="ps-4">
+                  <span class="text-success">&lt;!-- Brick Overflow Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-brick-overflow"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Bricksum Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-bricksum"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Colours Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Events Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-events"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Navigation Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-navigation"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Parts Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-parts"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- QR Code Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-qr"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Radio Station Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-radio-station"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Train Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-train"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br><br>
+
+                  <span class="text-success">&lt;!-- Videokit Icon --&gt;</span>
+                  <br>
+                  <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-videokit"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                  <br>
+                </div>
+                <span class="text-secondary">&lt;/</span><span class="text-success">body</span><span class="text-secondary">&gt;</span>              
+              </div>
+            </code>
+          </div> 
+
+          <h2 class="fw-bold" id="customize">3. Make It Awesome</h2>
+          <p>Alright, <span class="fw-bold">BrickMMO enthusiasts</span>, strap in and get ready to level up your game! It's time to elevate your gameplay to the next level with our own Icons. Let's rock those virtual bricks and roll through the challenges with unbeatable flair!</p>
+
+          <div class="d-flex column-gap-4 flex-wrap">
+            <div class="border flex-grow-1 border-secondary bg-white rounded-3">
+              <a href="#setting-color"
+                class="w-100 btn btn-outline-dark border border-secondary border-start-0 border-top-0 border-end-0 border-5" style="font-size: 20px;">
+                <i class="fa-solid fa-palette pe-1"></i></i> Colours
+              </a>
+            </div>
+            <div class="border flex-grow-1 border-secondary bg-white rounded-3">
+              <a href="#setting-size"
+                class="w-100 btn btn-outline-dark border border-secondary border-start-0 border-top-0 border-end-0 border-5" style="font-size: 20px;">
+                <i class="fas fa-expand-arrows-alt pe-2"></i> Sizing
+              </a>
+            </div>
+          </div>
+
+          <h1 class="fw-bold pb-3 mt-5" id="how-add">How To Add Icons</h1>
+          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">You can position Brickmmo icons almost <span class="fw-bold">anywhere</span>, and we've designed them to seamlessly adopt the traits of the surrounding text, ensuring they integrate naturally.</p>
+          <p>In this section, you'll learn how to seamlessly incorporate icons into your project. We'll cover how to style these icons effectively and explore the various classes that BrickMMO Icons provide, enabling you to customize and enhance your design with ease.</p>
+
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3 w-75">
+            <div class="p-3">
+              <div class="fw-bold mb-2"><i class="fa-solid fa-flag-checkered"></i> Before You Get Started</div>
+              <p class="mb-2">Make sure you've added the CDN code on your script code before starting:</p>
+              <code>
+                <span class="text-dark">&lt;</span><span class="text-success">link </span><span class="text-danger">rel</span><span class="text-dark">=</span><span class="text-primary">"stylesheet"</span> <span class="text-danger">href</span><span class="text-dark">=</span><span class="text-primary">"<span class="text-decoration-underline">https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css</span>"</span><span class="text-dark"> /&gt;</span>
+              </code>
+            </div>
+          </div>
+
+          <div class="text-center my-3">
+            <iframe class="rounded-5" width="720" height="406" src="https://www.youtube.com/embed/Yy1v3pvo4uo" title="BrickMMO Icons | Create Your First BrickMMO Icon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <h2 class="fw-bold">Basics</h2>
+          <p>To include an icon, you need to be aware of a few key details:</p>
+          <div class="ms-3">
+            <ol>
+              <li>The shorthand <span class="fw-bold">class name for the style</span> you want to use</li>
+              <li>The <span class="fw-bold">icon name</span>, prefixed with <span class="bg-white px-2"><code>bm-</code></span> (shorthand of BrickMMO).</li>
+            </ol>
+          </div>
+
+          <h2 class="fw-bold">Add Icons to HTML</h2>
+          <p>We crafted BrickMMO for seamless integration with inline elements. For styling, utilize the appropriate <span class="fw-bold">CSS classes</span> from BrickMMO for your desired icon style, and include the icon name class prefixed with <span class="bg-white px-2"><code>bm-</code></span> for selecting the specific icon. Accessibility-conscious individuals might consider using the <span class="bg-white px-2"><code>&lt;span&gt;</code></span> element as an alternative to <span class="bg-white px-2"><code>&lt;i&gt;</code></span>.</p>
+          <p>Here's an example:</p>
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <code>
+                <span class="text-success">&lt;!-- This example uses &lt;i&gt; element with: The `colours` icon with the `bm-` prefix --&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br><br>
+
+                <span class="text-success">&lt;!-- Or you can use a &lt;span&gt; element, with classes applied in the same way --&gt;</span>
+                  <br>
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-secondary">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+              </code>
+            </div>
+          </div>
+
+          <h2 class="fw-bold">Which Icons do we have?</h2>
+          <p>BrickMMO presents a major extension of Icons in its Version 1.0. Each of these Icons will be used in various stations and/or tools, enabling this project to create Smart Cities. Below you will find a list of each Icon with its corresponding icon.</p>
+          <table class="table table-bordered" style="max-width: 500px;">
+            <thead>
+                <tr>
+                    <th scope="col">BrickMMO Icon</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Icon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BrickOverflow</td>
+                    <td><code>&lt;i class="bm-brick-overflow"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-brick-overflow"></i></td>
+                </tr>
+                <tr>
+                    <td>Bricksum</td>
+                    <td><code>&lt;i class="bm-bricksum"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-bricksum"></i></td>
+                </tr>
+                <tr>
+                    <td>Brix</td>
+                    <td><code>&lt;i class="bm-brix"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-brix"></i></td>
+                </tr>
+                <tr>
+                    <td>Colours</td>
+                    <td><code>&lt;i class="bm-colours"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-colours"></i></td>
+                </tr>
+                <tr>
+                    <td>Control Panel</td>
+                    <td><code>&lt;i class="bm-control-panel"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-control-panel"></i></td>
+                </tr>
+                <tr>
+                    <td>Conversions</td>
+                    <td><code>&lt;i class="bm-control-panel"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-control-panel"></i></td>
+                </tr>
+                <tr>
+                    <td>Crypto</td>
+                    <td><code>&lt;i class="bm-control-panel"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-control-panel"></i></td>
+                </tr>
+                <tr>
+                    <td>Events</td>
+                    <td><code>&lt;i class="bm-events"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-events"></i></td>
+                </tr>
+                <tr>
+                    <td>Flow</td>
+                    <td><code>&lt;i class="bm-flow"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-flow"></i></td>
+                </tr>
+                <tr>
+                    <td>GPS</td>
+                    <td><code>&lt;i class="bm-navigation"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-navigation"></i></td>
+                </tr>
+                <tr>
+                    <td>Navigation</td>
+                    <td><code>&lt;i class="bm-navigation"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-navigation"></i></td>
+                </tr>
+                <tr>
+                    <td>Parts</td>
+                    <td><code>&lt;i class="bm-parts"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-parts"></i></td>
+                </tr>
+                <tr>
+                    <td>Pick a Brick</td>
+                    <td><code>&lt;i class="bm-pick-a-brick"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-pick-a-brick"></i></td>
+                </tr>
+                <tr>
+                    <td>Pixelate</td>
+                    <td><code>&lt;i class="bm-placekit"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-placekit"></i></td>
+                </tr>
+                <tr>
+                    <td>PlaceKit</td>
+                    <td><code>&lt;i class="bm-placekit"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-placekit"></i></td>
+                </tr>
+                <tr>
+                    <td>Power Grid</td>
+                    <td><code>&lt;i class="bm-power-grid"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-power-grid"></i></td>
+                </tr>
+                <tr>
+                    <td>QR Codes</td>
+                    <td><code>&lt;i class="bm-qr"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-qr"></i></td>
+                </tr>
+                <tr>
+                    <td>Radio Station</td>
+                    <td><code>&lt;i class="bm-radio-station"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-radio-station"></i></td>
+                </tr>
+                <tr>
+                    <td>Roadview</td>
+                    <td><code>&lt;i class="bm-roadview"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-roadview"></i></td>
+                </tr>
+                <tr>
+                    <td>Stores</td>
+                    <td><code>&lt;i class="bm-stores"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-stores"></i></td>
+                </tr>
+                <tr>
+                    <td>Timeline</td>
+                    <td><code>&lt;i class="bm-timeline"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-timeline"></i></td>
+                </tr>
+                <tr>
+                    <td>Timesheets</td>
+                    <td><code>&lt;i class="bm-timesheets"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-timesheets"></i></td>
+                </tr>
+                <tr>
+                    <td>Tracks</td>
+                    <td><code>&lt;i class="bm-tracks"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-tracks"></i></td>
+                </tr>
+                <tr>
+                    <td>Train</td>
+                    <td><code>&lt;i class="bm-train"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-train"></i></td>
+                </tr>
+                <tr>
+                    <td>VideoKit</td>
+                    <td><code>&lt;i class="bm-videokit"&gt;&lt;/i&gt;</code></td>
+                    <td style="font-size: 1.5em;"><i class="bm-videokit"></i></td>
+                </tr>
+            </tbody>
+          </table>
+
+          <h1 class="fw-bold pb-3" id="how-style">How To Style Icons</h1>
+          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">Although you can add inline styles such as <code>font-size</code>, we have created some <span class="fw-bold">Styles</span> that will allow you to change the <span class="fw-bold">color and size</span> of the icon. This will allow you to change the colors and sizes as you want.</p>
+
+          <p>To make changes, first <span class="fw-bold">click on the color palette</span>. This will allow you to see the options we have for colors and sizes.</p>
+
+          <h2 class="fw-bold" id="setting-color">Setting Color:</h2>
+
+          <p>Among the colors, you will find those that identify BrickMMO, which are:</p>
+          <ul>
+              <li>Gray &#8594; #858485</li>
+              <li>Orange &#8594; #EF5D23</li>
+              <li>Red &#8594; #EC2225</li>
+              <li>Additionally, there is a field to choose any color you prefer.</li>
+          </ul>
+
+          <h2 class="fw-bold" id="setting-size">Setting Size</h2>
+
+          <p>Similarly, you will find 6 different sizes, which are:</p>
+          <ul>
+            <li><code>.bm-2xs</code> &#8594; font-size: .625em;</li>
+            <li><code>.bm-xs</code> &#8594; font-size: .75em;</li>
+            <li><code>.bm-sm</code> &#8594; font-size: .875em;</li>
+            <li><code>.bm-lg</code> &#8594; font-size: 1.25em;</li>
+            <li><code>.bm-xl</code> &#8594; font-size: 1.5em;</li>
+            <li><code>.bm-2xl</code> &#8594; font-size: 2em;</li>
+          </ul>
+        
+          <div class="text-center">
+            <img class="rounded-3 border border-black" style="width: 85%;" src="../images/settings.png" alt="aa">
+          </div>
+
+          <h1 class="fw-bold py-3" id="styling-brickmmo">Styling with BrickMMO Icons</h1>
+          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">In this Section we are going to explain <span class="fw-bold">where and how to add</span> the styles as well as we are going to show you some <span class="fw-bold">examples</span></p>
+
+          <p>The first thing you need to understand is that the color will be defined within the <code>style</code> attribute, whereas the sizes will be added to the <code>class</code> attribute where you specify the icon to illustrate. The color will be defined using the hexadecimal system, but if you prefer, you can use the RGB system if it's easier for you. Instead, the size will appear alongside the icon's alias. In many cases, you will see a period (.) before the class name, for example: <code>bm-xs</code>. This is because the period (.) signifies the CSS class selector.</p>
+
+          <h2 class="fw-bold" id="setting-size">Styling Basics</h2>
+          <p>The icons developed by BrickMMO have the option to adopt the size and color defined by the CSS of their parent element. This feature ensures seamless integration and behavior according to the text where they are placed, maintaining appropriate visual alignment and consistency.</p>
+
+          <p>Below, you can see an example of how to apply styles with CSS that will be applied to BrickMMO icons.</p>
+
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <span style="font-size: 3em; color: DarkCyan;">
+                <i class="bm-colours"></i>
+              </span>
+              
+              <span style="font-size: 60px; color: DarkMagenta;">
+                <i class="bm-qr"></i>
+              </span>
+              
+              <span style="font-size: 4.25rem;">
+                <span style="color: FireBrick;">
+                  <i class="bm-train"></i>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <code>
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 3em; color: DarkCyan;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br><br>
+
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 60px; color: DarkMagenta;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-qr"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br><br>
+
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 4.25rem;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"color: FireBrick;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-5">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-train"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+              </code>
+            </div>
+          </div> 
+
+          <h1 class="fw-bold">Run into a problem?</h1>
+          <h3 class="fw-bold">Double-Check Your Code</h3>
+          <p>If your <code class="bg-white px-2">&lt;i&gt;</code> aren't displaying, make sure you've got the latest BrickMMO Icons CDN </p>
+          <link rel="stylesheet" href="https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css" />
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <code>
+                <span class="text-dark">&lt;</span><span class="text-success">link </span><span class="text-danger">rel</span><span class="text-dark">=</span><span class="text-primary">"stylesheet"</span> <span class="text-danger">href</span><span class="text-dark">=</span><span class="text-primary">"<span class="text-decoration-underline">https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css</span>"</span><span class="text-dark"> /&gt;</span>
+              </code>
+            </div>
+          </div>  
+        </div>
+    </main>
+
+    <!-- fontawesone -->
+    <script src="https://kit.fontawesome.com/a74f41de6e.js" crossorigin="anonymous"></script>
+    <!-- Link for Bootstrap javascript functionalities -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.background-image {
+    background-image: url('https://img.fortawesome.com/1ce05b4b/hero-icon-bg.svg'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/* ----- BM CLASSES SIZE ------ */
+
+.bm-2xs{
+    font-size: .625em;
+}
+
+.bm-xs{
+    font-size: .75em;
+}
+
+.bm-sm{
+    font-size: .875em;
+}
+
+.bm-lg{
+    font-size: 1.25em;
+}
+
+.bm-xl{
+    font-size: 1.5em;
+}
+
+.bm-2xl{
+    font-size: 2em;
+}
+
+/* BM CLASSES ROTATE */
+
+.bm-rotate-90{
+    transform: rotate(90deg);
+}
+
+.bm-rotate-180{
+    transform: rotate(180deg);
+}
+
+.bm-rotate-270{
+    transform: rotate(270deg);
+}
+
+.text-orange {
+  color: #ff5b00 !important;
+}
