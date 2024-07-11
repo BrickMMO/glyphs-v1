@@ -45,9 +45,13 @@
 }
 
 .text-orange {
-  color: #ff5b00 !important;
+    color: #EF5D23 !important;
+}
+
+.bg-orange {
+    background-color: #EF5D23 !important;
 }
 
 .custom-tooltip {
     --bs-tooltip-bg: var(--bs-primary);
-  }
+}
