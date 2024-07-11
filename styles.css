@@ -1,8 +1,7 @@
 .background-image {
-    background-image: url('https://img.fortawesome.com/1ce05b4b/hero-icon-bg.svg'); /* Reemplaza con la URL de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+    /* background-image: url('https://img.fortawesome.com/1ce05b4b/hero-icon-bg.svg'); */
+    background-image: url('images/background.png');
+    
 }
 
 /* ----- BM CLASSES SIZE ------ */
@@ -48,3 +47,7 @@
 .text-orange {
   color: #ff5b00 !important;
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }

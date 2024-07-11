@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.37 177">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="35.27" height="35.4"/>
+  <rect class="cls-1" x="35.27" y="35.4" width="35.27" height="35.4"/>
+  <rect class="cls-1" x="70.55" y="70.8" width="35.27" height="35.4"/>
+  <rect class="cls-1" x="105.82" y="53.1" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="123.45" y="35.4" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="141.09" y="17.7" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="158.73" width="17.64" height="17.7"/>
+  <rect class="cls-1" y="159.3" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="17.64" y="141.6" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="35.27" y="123.9" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="52.91" y="106.2" width="17.64" height="17.7"/>
+  <rect class="cls-1" x="105.82" y="106.2" width="35.27" height="35.4"/>
+  <rect class="cls-1" x="141.09" y="141.6" width="35.27" height="35.4"/>
+</svg>

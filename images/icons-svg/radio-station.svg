@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.75 185.7">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #231f20;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 15px;
+      }
+
+      .cls-2 {
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-3" d="M117.46,178.2l-39.22-117.48c-3.84-14.77-23.64-14.77-27.48,0L11.84,178.2"/>
+    <ellipse class="cls-1" cx="63.45" cy="31.02" rx="17.75" ry="17.76"/>
+    <g>
+      <path class="cls-2" d="M29.95,45.18c-1.28-1.11-7.07-6.38-6.69-14.26.33-6.94,5.24-11.49,6.69-12.75"/>
+      <path class="cls-2" d="M18.07,57.62c-2.5-2.16-13.78-12.42-13.04-27.78.65-13.52,10.21-22.39,13.04-24.84"/>
+    </g>
+    <g>
+      <path class="cls-2" d="M96.79,17.44c1.28,1.11,7.07,6.38,6.69,14.26-.33,6.94-5.24,11.49-6.69,12.75"/>
+      <path class="cls-2" d="M108.67,5c2.5,2.16,13.78,12.42,13.04,27.78-.65,13.52-10.21,22.39-13.04,24.84"/>
+    </g>
+  </g>
+  <line class="cls-2" x1="22.21" y1="157.45" x2="102.21" y2="134.15"/>
+  <line class="cls-2" x1="43.92" y1="88.72" x2="94.42" y2="108.31"/>
+</svg>
