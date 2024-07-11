@@ -386,7 +386,7 @@
                     <!-- TITLE AND DOWNLOAD BUTTON -->
                     <div class="d-flex align-items-center gap-5 mb-4">
                         <h2 id="iconTitle" class="text-start fw-bold">Title</h2>
-                        <i class="btn fa-solid fa-arrow-down text-decoration-underline btn-outline-primary border-0" style="font-size: 1.5rem;"></i>
+                        <i class="btn fa-solid fa-arrow-down text-decoration-underline btn-outline-primary border-0" onclick="downloadSVG(this)" style="font-size: 1.5rem;" data-bs-toggle="tooltip" title="Download Icon!" data-bs-custom-class="custom-tooltip"></i>
                     </div>
 
                     <!-- ICON AND CLIPBOARD -->
@@ -508,6 +508,9 @@
         /* store the icon clicked */
         let iconClicked
 
+        /* store the icon clicked to download the svg */
+        let iconSvg
+
         /* ----- Search Bar Keyword ----- */
         function filterIcons(keyword) {
             keyword = keyword.toLowerCase();
@@ -531,6 +534,8 @@
                 let iconClass = individualDiv.children[0].children[0].children[0];
 
                 iconClicked = iconClass
+
+                iconSvg = iconClass
 
                 /* clipboard.innerText = `<i class="${iconClass.className}"></i>` */
                 clipboard.innerText = iconClass.outerHTML
@@ -689,6 +694,53 @@
         });
 
         /* ----- Functions ----- */
+
+        function downloadSVG(element){
+
+            const tooltipInstance = bootstrap.Tooltip.getInstance(element);
+            
+            element.setAttribute("data-bs-original-title", "Nice!");
+
+            if (tooltipInstance) {
+                tooltipInstance.setContent({ '.tooltip-inner': 'Nice!' });
+            } else {
+                new bootstrap.Tooltip(element, { title: 'Nice!' }).show();
+            }
+
+            let svgFile = iconSvg.className.replace('bm-', '');
+            console.log(svgFile);
+            
+            var svgPath = `./images/icons-svg/${svgFile}.svg`;
+    
+            fetch(svgPath)
+                .then(response => response.text())
+                .then(svgContent => {
+                    var blob = new Blob([svgContent], { type: 'image/svg+xml' });
+
+                    var link = document.createElement('a');
+
+                    link.download = `${svgFile}.svg`;
+
+                    link.href = URL.createObjectURL(blob);
+
+                    document.body.appendChild(link);
+
+                    link.click();
+
+                    document.body.removeChild(link);
+                })
+                .catch(error => console.error('Error downloading the SVG:', error));
+
+            setTimeout(() => {
+                element.setAttribute("data-bs-original-title", "Download Icon!");
+                if (tooltipInstance) {
+                    tooltipInstance.setContent({ '.tooltip-inner': 'Download Icon!' });
+                    tooltipInstance.show();
+                } else {
+                    new bootstrap.Tooltip(element, { title: 'Download Icon!' }).show();
+                }
+            }, 1000);
+        }
 
         function closeIconPopUp(){
             iconPopup.classList = []
