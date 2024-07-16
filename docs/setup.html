@@ -32,7 +32,7 @@
     <!-- CONTENT -->
     <main class="mt-3 d-flex" style="background-color: #F1F2F4;">
         <div class="p-3 border border-secondary" style="flex-basis: 300px;">
-            <ul class="list-unstyled ps-0">
+            <ul class="list-unstyled ps-0 sticky-top">
               <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
                   Get Started on the Web
@@ -47,6 +47,20 @@
                 </div>
               </li>
               <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Styling icons on the Web
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#styling-brickmmo" class="link-dark rounded">Styling with BrickMMO Icons</a></li>
+                    <li><a href="#styling-basics" class="link-dark rounded">Styling Basics</a></li>
+                    <li><a href="#colours-icons" class="link-dark rounded">Colours Icons</a></li>
+                    <li><a href="#styling-sizes" class="link-dark rounded">Sizing Icons</a></li>
+                    <li><a href="#" class="link-dark rounded">Fixed Width Icons</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                   Add Icons on the Web
                 </button>
@@ -57,30 +71,12 @@
                   </ul>
                 </div>
               </li>
-              <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                  Styling icons on the Web
-                </button>
-                <div class="collapse" id="orders-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#styling-brickmmo" class="link-dark rounded">Styling with BrickMMO Icons</a></li>
-                    <li><a href="#styling-basics" class="link-dark rounded">Styling Basics</a></li>
-                    <li><a href="#styling-colours" class="link-dark rounded">Colours Icons</a></li>
-                    <li><a href="#styling-sizes" class="link-dark rounded">Sizing Icons</a></li>
-                    <li><a href="#" class="link-dark rounded">Fixed Width Icons</a></li>
-                  </ul>
-                </div>
-              </li>
             </ul>
         </div> 
         <div class="px-5 py-3 border border-secondary" style="flex-basis: calc(100% - 300px)">
           <h1 class="fw-bold pb-3" id="quick-start">Quick Start</h1>
           <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">BrickMMO has its own unique set of icons! Come and explore how to use and integrate them into your different pages. <span class="fw-bold">Developed by the BrickMMO community</span>, these icons are completely <span class="fw-bold">free to use</span>. Enhance your project with our custom-made icons!</p>
           <p>We'll cover the basics of setting up BrickMMO Icons and finding the perfect icon for your project. This video will walk you through the steps below:</p>
-
-          <div class="text-center my-3">
-            <iframe class="rounded-5" width="720" height="406" src="https://www.youtube.com/embed/Yy1v3pvo4uo" title="BrickMMO Icons | Create Your First BrickMMO Icon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
 
           <h2 class="fw-bold" id="setup">1. Setup BrickMMO Icons in Your Project</h2>
           <p>BrickMMO Icon CDN is the easiest way to get BrickMMO icons into your projects. Just grab the code and add the CDN code to the head of each template or page of your project where you want to add icons.</p>
@@ -215,7 +211,131 @@
             </div>
           </div>
 
-          <h1 class="fw-bold pb-3 mt-5" id="how-add">How To Add Icons</h1>
+          <h1 class="fw-bold py-3" id="styling-brickmmo">Styling with BrickMMO Icons</h1>
+          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">In this Section we are going to explain <span class="fw-bold">where and how to add</span> the styles as well as we are going to show you some <span class="fw-bold">examples</span></p>
+
+          <p>The first thing you need to understand is that the color will be defined within the <code>style</code> attribute, whereas the sizes will be added to the <code>class</code> attribute where you specify the icon to illustrate. The color will be defined using the hexadecimal system, but if you prefer, you can use the RGB system if it's easier for you. Instead, the size will appear alongside the icon's alias. In many cases, you will see a period (.) before the class name, for example: <code>bm-xs</code>. This is because the period (.) signifies the CSS class selector.</p>
+
+          <h2 class="fw-bold" id="styling-basics">Styling Basics</h2>
+          <p>The icons developed by BrickMMO have the option to adopt the size and color defined by the CSS of their parent element. This feature ensures seamless integration and behavior according to the text where they are placed, maintaining appropriate visual alignment and consistency.</p>
+
+          <p>Below, you can see an example of how to apply styles with CSS that will be applied to BrickMMO icons.</p>
+
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <span style="font-size: 3em; color: DarkCyan;">
+                <i class="bm-colours"></i>
+              </span>
+              
+              <span style="font-size: 60px; color: DarkMagenta;">
+                <i class="bm-qr"></i>
+              </span>
+              
+              <span style="font-size: 4.25rem;">
+                <span style="color: FireBrick;">
+                  <i class="bm-train"></i>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
+            <div class="px-5 py-3">
+              <code>
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 3em; color: DarkCyan;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br><br>
+
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 60px; color: DarkMagenta;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-qr"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br><br>
+
+                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 4.25rem;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"color: FireBrick;"</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-5">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-train"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary ps-3">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+                <br>
+                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
+              </code>
+            </div>
+          </div> 
+
+          <h2 class="fw-bold" id="colours-icons">Colours Icons</h2>
+          <p>Icons designed for BrickMMO allow you to add any color you want. That's why you'll have the option to choose from these colors or add your own.</p>
+
+          <div class="text-center pb-3">
+            <img class="rounded-3 border border-black" style="width: 85%;" src="../images/settings-colours.png" alt="Settings Colours">
+          </div>
+
+          <p>To see examples of colors you can add, please refer to this table. You can use these examples either in the inline style or by clicking on one of the options provided in the previous image.</p>
+
+          <table class="table table-bordered w-auto">
+            <thead>
+                <tr>
+                    <th scope="col">Colour</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Style</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Taupe Gray</td>
+                    <td class="fw-bold">#858485</td>
+                    <td><div style="width: 50px; height: 40px; background-color: #858485;"></div></td>
+                </tr>
+                <tr>
+                    <td>Flame (Vivid Orange)</td>
+                    <td class="fw-bold">#EF5D23</td>
+                    <td><div style="width: 50px; height: 40px; background-color: #EF5D23;"></div></td>
+                </tr>
+                <tr>
+                    <td>Fire Engine Red</td>
+                    <td class="fw-bold">#EC2225</td>
+                    <td><div style="width: 50px; height: 40px; background-color: #EC2225;"></div></td>
+                </tr>
+                <tr>
+                    <td>Blue</td>
+                    <td class="fw-bold">#0000FF</td>
+                    <td><div style="width: 50px; height: 40px; background-color: #0000FF;"></div></td>
+                </tr>
+                <tr>
+                  <td>Aquamarine</td>
+                  <td class="fw-bold">#7FFFD4</td>
+                  <td><div style="width: 50px; height: 40px; background-color: aquamarine;"></div></td>
+                </tr>
+                <tr>
+                  <td>DarkSalmon</td>
+                  <td class="fw-bold">#E9967A</td>
+                  <td><div style="width: 50px; height: 40px; background-color: darksalmon;"></div></td>
+                </tr>
+                <tr>
+                  <td>DeepPink</td>
+                  <td class="fw-bold">#FF1493</td>
+                  <td><div style="width: 50px; height: 40px; background-color: deeppink;"></div></td>
+                </tr>
+                <tr>
+                  <td>LightBlue</td>
+                  <td class="fw-bold">#ADD8E6</td>
+                  <td><div style="width: 50px; height: 40px; background-color: lightblue;"></div></td>
+                </tr>
+                <tr>
+                  <td>Teal</td>
+                  <td class="fw-bold">#008080</td>
+                  <td><div style="width: 50px; height: 40px; background-color: teal;"></div></td>
+                </tr>
+            </tbody>
+          </table>
+
+          <h1 class="fw-bold py-3" id="how-add">How To Add Icons</h1>
           <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">You can position Brickmmo icons almost <span class="fw-bold">anywhere</span>, and we've designed them to seamlessly adopt the traits of the surrounding text, ensuring they integrate naturally.</p>
           <p>In this section, you'll learn how to seamlessly incorporate icons into your project. We'll cover how to style these icons effectively and explore the various classes that BrickMMO Icons provide, enabling you to customize and enhance your design with ease.</p>
 
@@ -227,10 +347,6 @@
                 <span class="text-dark">&lt;</span><span class="text-success">link </span><span class="text-danger">rel</span><span class="text-dark">=</span><span class="text-primary">"stylesheet"</span> <span class="text-danger">href</span><span class="text-dark">=</span><span class="text-primary">"<span class="text-decoration-underline">https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css</span>"</span><span class="text-dark"> /&gt;</span>
               </code>
             </div>
-          </div>
-
-          <div class="text-center my-3">
-            <iframe class="rounded-5" width="720" height="406" src="https://www.youtube.com/embed/Yy1v3pvo4uo" title="BrickMMO Icons | Create Your First BrickMMO Icon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <h2 class="fw-bold">Basics</h2>
@@ -262,7 +378,7 @@
 
           <h2 class="fw-bold">Which Icons do we have?</h2>
           <p>BrickMMO presents a major extension of Icons in its Version 1.0. Each of these Icons will be used in various stations and/or tools, enabling this project to create Smart Cities. Below you will find a list of each Icon with its corresponding icon.</p>
-          <table class="table table-bordered" style="max-width: 500px;">
+          <table class="table table-bordered w-auto">
             <thead>
                 <tr>
                     <th scope="col">BrickMMO Icon</th>
@@ -399,7 +515,7 @@
             </tbody>
           </table>
 
-          <h1 class="fw-bold pb-3" id="how-style">How To Style Icons</h1>
+          <h1 class="fw-bold py-3" id="how-style">How To Style Icons</h1>
           <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">Although you can add inline styles such as <code>font-size</code>, we have created some <span class="fw-bold">Styles</span> that will allow you to change the <span class="fw-bold">color and size</span> of the icon. This will allow you to change the colors and sizes as you want.</p>
 
           <p>To make changes, first <span class="fw-bold">click on the color palette</span>. This will allow you to see the options we have for colors and sizes.</p>
@@ -427,68 +543,10 @@
           </ul>
         
           <div class="text-center">
-            <img class="rounded-3 border border-black" style="width: 85%;" src="../images/settings.png" alt="aa">
+            <img class="rounded-3 border border-black" style="width: 85%;" src="../images/settings.png" alt="Settings Styles">
           </div>
 
-          <h1 class="fw-bold py-3" id="styling-brickmmo">Styling with BrickMMO Icons</h1>
-          <p class="px-2 border-start border-3 border-secondary" style="font-size: 18px;">In this Section we are going to explain <span class="fw-bold">where and how to add</span> the styles as well as we are going to show you some <span class="fw-bold">examples</span></p>
-
-          <p>The first thing you need to understand is that the color will be defined within the <code>style</code> attribute, whereas the sizes will be added to the <code>class</code> attribute where you specify the icon to illustrate. The color will be defined using the hexadecimal system, but if you prefer, you can use the RGB system if it's easier for you. Instead, the size will appear alongside the icon's alias. In many cases, you will see a period (.) before the class name, for example: <code>bm-xs</code>. This is because the period (.) signifies the CSS class selector.</p>
-
-          <h2 class="fw-bold" id="setting-size">Styling Basics</h2>
-          <p>The icons developed by BrickMMO have the option to adopt the size and color defined by the CSS of their parent element. This feature ensures seamless integration and behavior according to the text where they are placed, maintaining appropriate visual alignment and consistency.</p>
-
-          <p>Below, you can see an example of how to apply styles with CSS that will be applied to BrickMMO icons.</p>
-
-          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
-            <div class="px-5 py-3">
-              <span style="font-size: 3em; color: DarkCyan;">
-                <i class="bm-colours"></i>
-              </span>
-              
-              <span style="font-size: 60px; color: DarkMagenta;">
-                <i class="bm-qr"></i>
-              </span>
-              
-              <span style="font-size: 4.25rem;">
-                <span style="color: FireBrick;">
-                  <i class="bm-train"></i>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          <div class="border border-secondary border-2 rounded-3 bg-white mb-3">
-            <div class="px-5 py-3">
-              <code>
-                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 3em; color: DarkCyan;"</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-colours"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
-                <br><br>
-
-                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 60px; color: DarkMagenta;"</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary ps-3">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-qr"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
-                <br><br>
-
-                <span class="text-secondary">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"font-size: 4.25rem;"</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary ps-3">&lt;</span><span class="text-success">span </span><span class="text-primary">style</span><span class="text-dark">=</span><span class="text-dark">"color: FireBrick;"</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary ps-5">&lt;</span><span class="text-success">i </span><span class="text-primary">class</span><span class="text-dark">=</span><span class="text-dark">"bm-train"</span><span class="text-secondary">&gt;</span><span class="text-secondary">&lt;/</span><span class="text-success">i</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary ps-3">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
-                <br>
-                <span class="text-secondary">&lt;/</span><span class="text-success">span</span><span class="text-secondary">&gt;</span>
-              </code>
-            </div>
-          </div> 
-
-          <h1 class="fw-bold">Run into a problem?</h1>
+          <h1 class="fw-bold py-3">Run into a problem?</h1>
           <h3 class="fw-bold">Double-Check Your Code</h3>
           <p>If your <code class="bg-white px-2">&lt;i&gt;</code> aren't displaying, make sure you've got the latest BrickMMO Icons CDN </p>
           <link rel="stylesheet" href="https://cdn.brickmmo.com/fonticons@1.0.0/fonticons.css" />
