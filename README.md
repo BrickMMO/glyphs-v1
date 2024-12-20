@@ -3,7 +3,7 @@
 The website for the BrickMMO Icon library. 
 
 > This repo is available to view at  
-> [https://glyphbricks.brickmmo.com](https://glyphbricks.brickmmo.com)
+> [https://glyphs.brickmmo.com](https://glyphs.brickmmo.com)
 
 ---
 
@@ -18,7 +18,7 @@ This project uses a [jQuery](https://jquery.com/), [HTML](https://developer.mozi
 ## Repo Resources
 
 * [BrickMMO](https://www.brickmmo.com/)
-* [BrickMMO GlyphBricks](https://glyphbricks.brickmmo.com/)
+* [BrickMMO Glyphs](https://glyphs.brickmmo.com/)
 
 <a href="https://brickmmo.com">
 <img src="https://cdn.brickmmo.com/images@1.0.0/brickmmo-logo-coloured-horizontal.png" width="200">
