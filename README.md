@@ -5,6 +5,8 @@ The website for the BrickMMO Icon library.
 > This repo is available to view at  
 > [https://glyphs.brickmmo.com](https://glyphs.brickmmo.com)
 
+https://www.youtube.com/watch?v=VDy9xktOI6M
+
 ---
 
 ## Project Stack
