@@ -1,4 +1,4 @@
-# Glyph Bricks
+# Glyph Icon Library
 
 The website for the BrickMMO Icon library. 
 
